@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/webCalc.css">
+	<script type="text/javascript">
+		function insertNumber(num){
+			calcForm.textbox.value = calcForm.textbox.value + num;
+		}
+
+		//function equal(){
+		//	calcForm.textbox.value = eval(calcForm.textbox.value);
+		//}  -------Note: it still works this way
+
+		function equal(){
+			var exp = calcForm.textbox.value;
+			if(exp){
+				calcForm.textbox.value = eval(exp);
+			}
+			
+		}
+
+		function cls(){
+			var exp = calcForm.textbox.value;
+			calcForm.textbox.value = exp.substring(0, exp.length-calcForm.textbox.value);
+		}
+
+		function del(){
+		    var exp = calcForm.textbox.value;
+			calcForm.textbox.value = exp.substring(0, exp.length-1);
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text">My Web Calculator</h1>
+        <form name=calcForm>
+    	   <input type="text" class="textbox" name="textbox">
+    	   <br><br>
+           <table>
+    	        <tr>
+    		        <td colspan="2"><input class="d" type="button" name="clearbtn" value="Clear" onclick="cls()"></td>
+    		        <!--<td colspan="2"><button class="d">Clear</button></td>-->
+    		        <td colspan="2"><input class="d" type="button" name="deletebtn" value="Delete" onclick="del()"></td>
+    	        </tr>
+
+    	        <tr>
+    		        <td><input class="design" type="button" name="btn7" value="7" onclick="insertNumber(btn7.value)"></td>
+    		        <!--<td><button class="design" onclick="insertNumber(8.value)">8</button></td>-->
+    		        <td><input class="design" type="button" name="btn8" value="8" onclick="insertNumber(btn8.value)"></td>
+    		        <td><input class="design" type="button" name="btn9" value="9" onclick="insertNumber(btn9.value)"></td>
+    		        <td><input class="design" type="button" name="addbtn" value="+" onclick="insertNumber(addbtn.value)"></td>
+    	        </tr>
+
+    	        <tr>
+    		        <td><input class="design" type="button" name="btn4" value="4" onclick="insertNumber(btn4.value)"></td>
+    		        <td><input class="design" type="button" name="btn5" value="5" onclick="insertNumber(btn5.value)"></td>
+    		        <td><input class="design" type="button" name="btn6" value="6" onclick="insertNumber(btn6.value)"></td>
+    		        <td><input class="design" type="button" name="subbtn" value="-" onclick="insertNumber(subbtn.value)"></td>
+    	        </tr>
+
+    	        <tr>
+    		        <td><input class="design" type="button" name="btn1" value="1" onclick="insertNumber(btn1.value)"></td>
+    		        <td><input class="design" type="button" name="btn2" value="2" onclick="insertNumber(btn2.value)"></td>
+    		        <td><input class="design" type="button" name="btn3" value="3" onclick="insertNumber(btn3.value)"></td>
+    				<td><input class="design" type="button" name="mulbtn" value="*" onclick="insertNumber(mulbtn.value)"></td>
+    			</tr>
+
+    			<tr>
+    				<td><input class="design" type="button" name="btn0" value="0" onclick="insertNumber(btn0.value)"></td>
+    				<td><input class="design" type="button" name="btndot" value="." onclick="insertNumber(btndot.value)"></td>
+    				<td><input class="design" type="button" name="equalbtn" value="=" onclick="equal()"></td>
+    				<td><input class="design" type="button" name="divbtn" value="/" onclick="insertNumber(divbtn.value)"></td>
+    			</tr>
+    		</table>
+    	</form>
+    </div>
+</body>
+</html>

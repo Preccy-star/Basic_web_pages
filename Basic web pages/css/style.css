@@ -1,0 +1,21 @@
+/*.first-twin{
+    height: 150px;
+}
+
+.second-twin{
+    height: 150px;
+    background-color: black;
+    color: white;
+}*/
+body{
+	background-image: url(../images/pic1.jpg);
+	/*background-image: url('pic1.jpg');*/
+	background-size: cover;
+	background-repeat: no-repeat;
+    /*background-position: center;*/
+    color: pink;
+}
+/*glass effect login page*/
+
+/*to relate the html with css, we hve id (#) and class(.)*/
+/*to come out of a folder, we use .. eg url(../img/img.jgp)*/

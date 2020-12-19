@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/signIn.css">
+	<!--<link rel="stylesheet" type="text/css" href="">-->
+	<title>Preshapp</title>	
+</head>
+
+<body>
+		
+	<div class="image"></div>
+
+	<!--<form>
+		First name:<br>
+		<input type="text" name="firstname"><br>
+  		Last name:<br>
+  		<input type="text" name="lastname">
+	</form> .......does d same as below -->
+	<div id="slidebox">
+		<form action="firstPage.html" onsubmit="login(event)">
+			<h2 id="design">WELCOME TO PRESHAPP</h2><br>
+			<h3 id="design2">SIGN IN</h3><br>
+
+			<div class="content">
+				<label for="username">Username:</label>
+				<input type="text" name="Username" placeholder="Username e.g Obi1" class="bigger" id="name">
+				 <br><br>
+
+				<label for="pwd">Password:</label>
+				<input type="password" name="psw" placeholder="Password" class="bigger" id="pin"> <br><br>
+				<label><input type="checkbox" style="zoom: 1.5;">Remember me</label> <br><br>
+				<input type="submit" value="Sign In" class="box">
+				<a href="signUp.html" class="box">Sign up</a>
+				<p><span id="result"></span></p><br>
+				<p>forgot password? <a href="forgotPassword.html" class="box">Change Password</a></p>
+			</div>
+		</form>	
+		<!--<p>Username: <input type="text" name="Username" placeholder="Username e.g Obi1"></p>....does the same as above! -->
+	</div>
+	
+	<script type="text/javascript" src="js/signIn.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: Georgia, serif;
+	background-color: #ff3333
+	}
+
+nav{
+	border-radius: 0 !important;
+}

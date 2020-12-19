@@ -1,0 +1,21 @@
+body{
+	background-image: url(../images/image_0.jpg);
+	background-position: cover;
+	background-repeat: no-repeat;
+}
+.hi h3{
+    text-align: center;
+	font-family: vernada;
+	font-size: 50px;
+	color: pink;
+}
+
+.hi p{
+	font-family: vernada;
+	font-size: 50px;
+	color: pink;
+}
+
+.der{
+	align-items: center;
+}

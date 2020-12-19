@@ -1,0 +1,46 @@
+body{
+	background: linear-gradient(to right, #00cc7a, #0052cc);
+	padding-left: 30px;
+}
+
+.text{
+	font-family: courier;
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	margin-bottom: 50px;
+	padding: 20px;
+}
+
+.textbox{
+	margin-top: 30px;
+	width: 280px;
+	padding:5px;
+	font-size: 25px;
+}
+
+.d{
+    padding: 2px;
+	width: 140px;
+	height: 70px;
+	background-color: pink;
+	color: blue;
+	font-size: 19px;
+	cursor: pointer;
+}
+.d:hover{
+	background-color: #00cc7a;
+}
+
+.design{
+	padding: 2px;
+	width: 70px;
+	height: 70px;
+	background-color: pink;
+	color: blue;
+	font-size: 19px;
+	cursor: pointer;
+}
+.design:hover{
+	background-color: #00cc7a;
+}
